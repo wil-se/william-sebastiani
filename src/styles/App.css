@@ -91,24 +91,24 @@ code {
   color: #424242;
 }
 
-.menu-item:hover >a {
+.menu-col:hover >p>a {
   color: #fef6c7;
 }
 
-.menu-item:hover {
-  color: #fef6c7;
+.menu-col:hover {
+  color: #ffbe2b;
   background-color: #000000;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .active {
   border-left-style: double;
   border-right-style: double;
-  color: #fef6c7;
+  color: #ffed79;
   background-color: #000000;
   cursor: pointer;
-  text-decoration: underline;
+  padding-bottom: 2px;
+  padding-top: 2px;
 }
 
 .active>a {
@@ -117,4 +117,50 @@ code {
 
 .navbar {
   border-bottom-style: solid;
+}
+
+
+
+.menu-col {
+  display: inline-block;
+  position: relative;
+}
+
+.menu-col:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffdf93;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menu-col:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+.article-title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffdf93;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.article-title:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

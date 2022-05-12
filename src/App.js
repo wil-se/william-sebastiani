@@ -27,17 +27,17 @@ const App = () => {
       </Stack>
       </Row>
       <Row className="justify-content-center mt-4 navbar py-0 mx-5">
-        <Col onClick={() => navigate("/")} xs={6} md={2} className={`${location.pathname === "/" ? "active " : ""}menu-item text-center pb-2 pt-1 px-1`}>
-          Home
+        <Col onClick={() => navigate("/")} xs={6} md={2} className={`${location.pathname === "/" ? "active " : ""}menu-col text-center px-0 py-1`}>
+          <p className="menu-item mb-0">Home</p>
         </Col>
-        <Col onClick={() => navigate("/articoli")} xs={6} md={2} className={`${location.pathname.includes("articol") ? "active " : ""}menu-item text-center pb-2 pt-1 px-1`}>
-          Articoli
+        <Col onClick={() => navigate("/articoli")} xs={6} md={2} className={`${location.pathname.includes("articol") ? "active " : ""}menu-col text-center px-0 py-1`}>
+        <p className="menu-item mb-0">Articoli</p>
         </Col>
-        <Col onClick={() => navigate("/informazioni")} xs={6} md={2} className={`${location.pathname === "/informazioni" ? "active " : ""}menu-item text-center pb-2 pt-1 px-1`}>
-          Informazioni
+        <Col onClick={() => navigate("/informazioni")} xs={6} md={2} className={`${location.pathname === "/informazioni" ? "active " : ""}menu-col text-center px-0 py-1`}>
+        <p className="menu-item mb-0">Informazioni</p>
         </Col>
-        <Col onClick={() => navigate("/contatti")} href="/contatti" xs={6} md={2} className={`${location.pathname === "/contatti" ? "active " : ""}menu-item text-center pb-2 pt-1 px-1`}>
-        Contatti
+        <Col onClick={() => navigate("/contatti")} href="/contatti" xs={6} md={2} className={`${location.pathname === "/contatti" ? "active " : ""}menu-col text-center px-0 py-1`}>
+        <p className="menu-item mb-0">Contatti</p>
         </Col>
       </Row>
       <main className='main'>

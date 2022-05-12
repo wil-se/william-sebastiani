@@ -30,11 +30,11 @@ const Article = (content) => {
     })
 
   return (
-      <>
-    <Col xs={12} className="article-title"><Markdown>{title}</Markdown></Col>
-    <Col xs={12} className="article-body"><Markdown>{postContent}</Markdown></Col>
-    </>
-)
+        <>
+            <Col xs={12} className="article-title"><Markdown>{title}</Markdown></Col>
+            <Col xs={12} className="article-body"><Markdown>{postContent}</Markdown></Col>
+        </>
+    )
 }
 
 export default Article

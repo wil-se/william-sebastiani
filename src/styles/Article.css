@@ -18,10 +18,11 @@
   padding-left: 10px;
   text-align: center;
   padding-top: 10px;
+  border-color: black;
 }
 
 .article-title > h2 {
-  color: #fffadf;
+  color: #ffd129;
 }
 
 
