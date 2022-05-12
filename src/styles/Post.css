@@ -1,0 +1,10 @@
+.article-wrapper {
+  padding: 2rem;
+  border-style: double;
+  border-width: 6px;
+  background-color: #fff8d1;
+}
+
+.article__cover img {
+  width: 100%;
+}

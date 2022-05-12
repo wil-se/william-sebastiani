@@ -1,0 +1,51 @@
+.article-body {
+  border-style: solid;
+  border-width: 4px;
+  padding-left: 10px;
+  border-top-style: solid;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #fffadf;
+}
+
+.article-title {
+  border-style: solid;
+  border-bottom-style: solid;
+  background-color: black;
+  border-width: 4px;
+  padding-left: 10px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.article-title > h2 {
+  color: #fffadf;
+}
+
+
+.article-title-row {
+  border-bottom-style: solid;
+}
+
+.article-preview {
+  border-style: double;
+  border-width: 6px;
+  padding-left: 10px;
+  background-color: #fff5bd;
+}
+
+.article-preview:hover {
+  border-style: solid;
+  border-width: 6px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.article-preview:hover > h3
+ {
+  border-width: 6px;
+  cursor: pointer;
+  text-decoration: underline;
+}
