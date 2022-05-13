@@ -1,5 +1,6 @@
 import { Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import Markdown from "markdown-to-jsx";
 
 const Info = (props) => {
     const [info, setInfo] = useState("");
@@ -18,9 +19,9 @@ const Info = (props) => {
     return (
       <>
       <Col xs={12}>
-        <div className="article-title"><h2>Background</h2></div>
+        <div className="article-title"><h2>Chi sono</h2></div>
         <div className="article-body">
-          {info}
+          <Markdown>{info}</Markdown>
         </div>
       </Col>
       </>
