@@ -22,7 +22,7 @@ const App = () => {
           <img src={LogoIcon} height={130} width={130}></img>
         </Col>
         <Col xs={12} md={6} lg={4} className="text-center mx-auto mt-2">
-          <h4>William Sebastiani</h4>
+          <h4 style={{color: "#000"}}>William Sebastiani</h4>
         </Col>
       </Stack>
       </Row>
