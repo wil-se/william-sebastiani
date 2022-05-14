@@ -27,7 +27,7 @@ header.header {
 }
 
 main.main {
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-bottom: 3rem;
   margin-top: 2rem;
@@ -57,23 +57,6 @@ code {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
-  main.main {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  main.main {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  main.main {
-    width: 90%;
-  }
-}
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: #424242
@@ -84,7 +67,7 @@ code {
 }
 
 .menu-item {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .menu-item>a {
@@ -144,23 +127,37 @@ code {
   transform-origin: bottom left;
 }
 
-
-
-
-.article-title:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #ffdf93;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+body {
+  overflow-y: scroll;
 }
 
-.article-title:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.navbar {
+  margin-right: 6rem!important;
+  margin-left: 6rem!important;
 }
+
+
+
+  @media screen and (max-width: 1024px) {
+    main.main {
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 920px) {
+    main.main {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    main.main {
+      width: 100%;
+    }
+    
+    .navbar {
+      margin-right: 0.1rem!important;
+      margin-left: 0.1rem!important;
+    }
+    
+  }

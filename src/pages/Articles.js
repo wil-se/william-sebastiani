@@ -30,7 +30,12 @@ const Articles = () => {
 
   return (
     <>
-      {postContent}
+     <Col xs={12}>
+        <Row>
+          <div className="article-title"><h2>Archivio</h2></div>
+          <div className="article-preview-body">{postContent}</div> 
+        </Row>
+      </Col>
     </>
   )
 }

@@ -15,7 +15,7 @@ const App = () => {
   const location = useLocation();
 
   return (
-    <Container>
+    <Container className="px-5">
       <Row>
      <Stack className="justify-content-center pt-4">
         <Col xs={12} md={6} lg={4} className="text-center mx-auto">
@@ -26,7 +26,7 @@ const App = () => {
         </Col>
       </Stack>
       </Row>
-      <Row className="justify-content-center mt-4 navbar py-0 mx-5">
+      <Row className="justify-content-center mt-4 navbar py-0 mx-1">
         <Col onClick={() => navigate("/")} xs={6} md={2} className={`${location.pathname === "/" ? "active " : ""}menu-col text-center px-0 py-1`}>
           <p className="menu-item mb-0">Home</p>
         </Col>

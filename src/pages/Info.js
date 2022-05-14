@@ -1,4 +1,4 @@
-import { Col } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
 
@@ -19,10 +19,10 @@ const Info = (props) => {
     return (
       <>
       <Col xs={12}>
-        <div className="article-title"><h2>Chi sono</h2></div>
-        <div className="article-body">
-          <Markdown>{info}</Markdown>
-        </div>
+        <Row>
+          <div className="article-title"><h2>Chi sono</h2></div>
+          <div className="article-body"><Markdown>{info}</Markdown></div>
+        </Row>
       </Col>
       </>
     )
