@@ -7,7 +7,7 @@
   padding-bottom: 22px;
   padding-left: 22px;
   padding-right: 22px;
-  background-color: #fffadf;
+  background-color: var(--background-content);
 }
 
 .article-title {
@@ -22,7 +22,7 @@
 }
 
 .article-title > h2 {
-  color: #ffd129;
+  color: var(--primary-color);
 }
 
 
@@ -34,7 +34,7 @@
   border-style: double;
   border-width: 6px;
   padding-left: 10px;
-  background-color: #fff3af;
+  background-color: var(--background-content);
 }
 
 .article-preview-body {
@@ -43,7 +43,7 @@
   border-color: #000;
   border-width: 6px;
   padding-left: 10px;
-  background-color: #fff5bd;
+  background-color: var(--background-content);
 }
 
 .article-preview:hover {
@@ -53,7 +53,7 @@
   cursor: pointer;
 }
 
-.article-preview:hover > h3
+.article-preview:hover > h2
  {
   border-width: 6px;
   cursor: pointer;
