@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import Markdown from "markdown-to-jsx"
 import { useParams } from 'react-router-dom';
 import ArticlesIndex from '../articles/index.json'
-import { Col } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import '../styles/Article.css'
 
 const Article = (content) => {
@@ -31,8 +31,10 @@ const Article = (content) => {
 
   return (
         <>
-            <Col xs={12} className="article-title"><Markdown>{title}</Markdown></Col>
-            <Col xs={12} className="article-body"><Markdown>{postContent}</Markdown></Col>
+            <Row>
+                <Col xs={12} className="article-title"><Markdown>{title}</Markdown></Col>
+                <Col xs={12} className="article-body"><Markdown>{postContent}</Markdown></Col>
+            </Row>
         </>
     )
 }
