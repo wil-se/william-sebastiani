@@ -23,7 +23,6 @@ const App = () => {
         </Col>
         <Col xs={12} md={6} lg={4} className="text-center mx-auto mt-2">
           <h4 style={{color: "#000"}}>William Sebastiani</h4>
-          <h4 style={{color: "#000"}}>TEST AUTOPULL</h4>
         </Col>
       </Stack>
       </Row>
