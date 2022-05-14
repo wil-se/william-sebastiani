@@ -8,6 +8,7 @@
   padding-left: 22px;
   padding-right: 22px;
   background-color: var(--background-content);
+  text-align: justify;
 }
 
 .article-title {
