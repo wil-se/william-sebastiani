@@ -11,6 +11,5 @@ Il mio interesse per la blockchain è iniziato seguendo un corso extra all'unive
 Nei successivi due anni ho dedicato i miei studi al funzionamento della blockchain e ho scritto i miei primi smart contracts, acquisendo l'esperienza che mi ha portato a fare di questa passione un'attività sempre più concreta.
 In seguito mi sono licenziato per dedicare completamente il mio tempo al settore, mi sono trasferito alle Canarie per qualche mese e ho iniziato a viaggiare. 
 <br/><br/>
-Attualmente lavoro come libero professionista occupandomi principalmente di consulenze e tutoraggio.  
-Io e il mio team offriamo servizi di progettazione e produzione di applicazioni decentralizzate riguardo protocolli DeFi o di collection NFT.  
+Attualmente svolgo la libera professione occupandomi di consulenze, tutoraggio, progettazione e sviluppo.  
 Credo in un futuro decentralizzato e voglio contribuire alla sua creazione.
