@@ -34,7 +34,7 @@ const App = () => {
         <p className="menu-item mb-0">Articoli</p>
         </Col>
         <Col onClick={() => navigate("/informazioni")} xs={6} md={2} className={`${location.pathname === "/informazioni" ? "active " : ""}menu-col text-center px-0 py-1`}>
-        <p className="menu-item mb-0">Informazioni</p>
+        <p className="menu-item mb-0">Chi sono</p>
         </Col>
         <Col onClick={() => navigate("/contatti")} href="/contatti" xs={6} md={2} className={`${location.pathname === "/contatti" ? "active " : ""}menu-col text-center px-0 py-1`}>
         <p className="menu-item mb-0">Contatti</p>
