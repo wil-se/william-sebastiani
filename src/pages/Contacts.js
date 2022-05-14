@@ -21,7 +21,7 @@ const Contacts = () => {
       <Col xs={12}>
         <Row>
           <div className="article-title"><h2>Contatti</h2></div>
-          <div className="article-body"><Markdown>{contact}</Markdown></div> 
+          <div className="article-body text-center"><Markdown>{contact}</Markdown></div> 
         </Row>
       </Col>    
     </>
