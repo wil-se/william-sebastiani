@@ -15,7 +15,7 @@ const App = () => {
   const location = useLocation();
 
   return (
-    <Container className="px-5">
+    <Container className="px-4 px-md-5">
       <Row>
      <Stack className="justify-content-center pt-4">
         <Col xs={12} md={6} lg={4} className="text-center mx-auto">
