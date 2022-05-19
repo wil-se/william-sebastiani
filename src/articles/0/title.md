@@ -1,1 +1,1 @@
-## LUNA: i motivi del crollo
+### Cosa rende Solana diversa dalle blockchain EVM compatibili

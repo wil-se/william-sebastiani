@@ -12,7 +12,7 @@ const Articles = () => {
 
     const getFiles = async () => {
       let files = [];
-      for(let dir=0; dir<2; dir++) {
+      for(let dir=0; dir<1; dir++) {
         await import(`../articles/${dir}/title.md`)
           .then(res => fetch(res.default)
           .then(response => response.text())

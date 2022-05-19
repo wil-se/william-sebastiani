@@ -1,10 +1,15 @@
-████████  ███████████ █████████████ ██████ █████  ██████ ██
-████  ████████ ███████ ██████ █████ ████████ ██████ █████████ ███████
-████ ██████████ █████ ███ ████ ██████ █████████ ███████
-█████ ███████ ████████ █████████ ████████████ █████ █████
-████ ███████ ████████
-█████ ███████ ██████ ███████ ██████
-████  ██████████████ █████ ████████ ██████ █████████ ███████
-█████ ███████ ██████ ███████ ██████
-████ ███████ ████████
-█████ ███████ ██████ ███████ ██████
+### Introduzione
+Solana è stata fondata nel 2017 da Anatoly Yakovenko
+ ed è un progetto open source che implementa una blockchain Layer 1 altamente veloce, economica e scalabile. La rete principale (mainnet-beta) è stata lanciata a Febbraio 2020. Il token nativo (SOL), ha registrato il suo massimo storico il 6 Novembre 2021 a $260.
+<br/><br/>
+### Validazione
+La principale differenza dalle altre blockchain è l'algoritmo che ne regola il consenso: una combinazione di Proof of Stake e Proof of History. Un sistema decentralizzato per essere definito come tale deve agire come unico pur essendo composto da diverse parti autonome. Questa sincronia in reti come Ethereum si ottiene processando le transazioni blocco dopo blocco, di fatto il tempo nelle chain EVM compatibili (ma anche in Bitcoin ad esempio) è scandito dai blocchi. La Proof of History invece fa uso di un orologio globale, il quale garantisce che a un certo tempo ogni nodo allinea le proprie informazioni con quelle degli altri. In questo modo per un nodo è possibile ricevere e processare transazioni in modo asincrono e non c’è bisogno di aspettare la propagazione delle informazioni agli altri nodi. Questa è la chiave della velocità di Solana. La PoH garantisce che sia passato almeno un certo tempo dall’esecuzione di una transazione, sfruttando il fatto che il tempo impiegato per eseguire l’hash di una transazione è costante. 
+<br/><br/>
+### Transazioni e gas fees
+Il costo di una transazione è di $0.00025, attualmente in media vengono eseguite 2000 transazioni al secondo. L’architettura in teoria è in grado di gestire al massimo 710.000 transazioni al secondo su una rete gigabit standard. Un’ulteriore differenza con blockchain come ethereum ad esempio, è che quando una transazione viene inviata questa viene processata immediatamente (grazie alla PoH). Non esistono mempool dove le transazioni aspettano di essere processate, non è possibile pagare di più una transazione per aumentare la sua priorità rispetto alle altre. A mio parere il fatto che le transazioni vengano processate subito e allo stesso prezzo rende più complessi attacchi di front running.
+<br/><br/>
+### Programmi e account
+Solana esegue i programmi on-chain in maniera totalmente diversa rispetto alle blockchain EVM compatibili. Su Ethereum ad esempio i programmi sono stateful, perciò il loro stato deve essere conservato costantemente in memoria. Su Solana i programmi sono stateless, per cui non serve una memoria dove tenere traccia sullo stato delle cose, semplicemente una volta ricevuta la transazione questa viene eseguita e poi distrutta. Lo stato delle cose è conservato negli account i quali possono essere immaginati come dei file sul computer, anche i programmi stessi sono dei speciali tipi di account. Questo particolare tipo di infrastruttura combinato con la Proof of History permette di eseguire le transazioni in parallelo, il che aumenta le prestazioni a livello esponenziale. Un’ulteriore differenza sta nei linguaggi di programmazione usati. Mentre i programmi sulle chain EVM compatibili sono scritti principalmente in Solidity, i programmi su Solana sono scritti in Rust, che è un linguaggio di programmazione estremamente orientato a sicurezza ed efficienza.
+<br/><br/>
+### Conclusioni
+Il progetto di Solana è ambizioso e promettente. Anche se ha avuto qualche congestione negli ultimi mesi bisogna considerare che è un progetto nato recentemente e la stessa cosa si può dire della tecnologia blockchain in generale. Personalmente apprezzo molto lo stack tecnologico utilizzato per realizzare questa infrastruttura, mi da l’idea che sia stata pensato per sfruttare al massimo le risorse disponibili. Se si apprezzano i computer è inevitabile incuriosirsi di questa blockchain.
