@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import Markdown from "markdown-to-jsx";
-import ProfilePic from '../assets/img/william-nobg.png'
+
 
 const Info = (props) => {
     const [info, setInfo] = useState("");
