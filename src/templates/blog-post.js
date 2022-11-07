@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { Row, Col } from "react-bootstrap";
+
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -19,8 +21,14 @@ const BlogPostTemplate = ({
         itemType="http://schema.org/Article"
       >
         <header>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <Row>
+            <Col xs={12} className="text-center">
+              <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            </Col>
+            <Col xs={12} className="text-center">
+              <p><i>{post.frontmatter.date}</i></p>
+            </Col>
+          </Row>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
