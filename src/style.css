@@ -356,13 +356,15 @@ a:focus {
 .card-body {
   border-style: solid !important;
   border-color: #FFF !important;
-  border-top-style: hidden !important;
   border-bottom-style: hidden !important;
   color: #FFF !important;
 }
 
 .card-header {
   border-bottom-style: hidden !important;
+  border-bottom-color: white !important;
+  border-bottom-width: 2;
+  padding: 0 !important;
 }
 
 .card-footer {
@@ -371,4 +373,12 @@ a:focus {
   border-top-style: hidden !important;
   border-bottom-style: solid !important;
   color: #FFF !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+
+.title {
+  color: #000;
+  background-color: #FFF;
+  margin-bottom: 0px;
 }

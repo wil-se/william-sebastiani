@@ -24,7 +24,11 @@ const Layout = ({ location, title, children }) => {
       </Link>
       <MainNavbar />
       <Container className="mt-5">
-        <main>{children}</main>
+        <Row className="d-flex justify-content-center">
+          <Col xs={12} md={10} xl={10}>
+            <main>{children}</main>
+          </Col>
+        </Row>
       </Container>
       <footer className="text-center">
         © {new Date().getFullYear()}, William Sebastiani

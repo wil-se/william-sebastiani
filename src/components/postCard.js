@@ -9,25 +9,22 @@ console.log(excerpt)
 console.log(date)   
 console.log(title) 
     return (
-        <Card>
+        <Card className="mb-4">
             <Card.Header className="text-center">
-              <h2><b>{title}</b></h2>
+              <h2 className="title"><b>{title}</b></h2>
             </Card.Header>
             <Card.Body>
               <Row>
-                <Col>
-                    {category}
+                <Col xs={12}>
+                    <h4>{category}</h4>
                 </Col>
-                <Col>
+                <Col xs={12}>
                     {excerpt}
-                </Col>
-                <Col>
-                    {date}
                 </Col>
               </Row>
             </Card.Body>
             <Card.Footer>
-              Ciaciacia
+            {date}  
             </Card.Footer>
           </Card>
     )
