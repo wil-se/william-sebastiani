@@ -32,7 +32,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
-  --font-body: var(--fontFamily-serif);
+  --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
@@ -54,12 +54,12 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #FFF;
-  --color-text: #FFF;
-  --color-text-light: #FFF;
-  --color-heading: #FFF;
-  --color-heading-black: #FFF;
-  --color-accent: #d1dce5;
+  --color-primary: #F7F3E3;
+  --color-text: #F7F3E3;
+  --color-text-light: #F7F3E3;
+  --color-heading: #F7F3E3;
+  --color-heading-black: #F7F3E3;
+  --color-accent: #F7F3E3;
 }
 
 /* HTML elements */
@@ -232,11 +232,12 @@ table thead tr th {
 
 a {
   color: #000 !important;
+  text-decoration: none !important;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline !important;
 }
 
 /* Custom classes */
@@ -334,5 +335,40 @@ a:focus {
 }
 
 .navbar {
-  background-color: #FFF;
+  background-color: #E1F4CB;
+  border-bottom: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 2;
+  border-top: #000;
+  border-top-style: solid;
+  border-top-width: 2;
+}
+
+.logoname {
+  color: #F37748;
+}
+
+.card {
+  background-color: transparent !important;
+}
+
+
+.card-body {
+  border-style: solid !important;
+  border-color: #FFF !important;
+  border-top-style: hidden !important;
+  border-bottom-style: hidden !important;
+  color: #FFF !important;
+}
+
+.card-header {
+  border-bottom-style: hidden !important;
+}
+
+.card-footer {
+  border-style: solid !important;
+  border-color: #FFF !important;
+  border-top-style: hidden !important;
+  border-bottom-style: solid !important;
+  color: #FFF !important;
 }

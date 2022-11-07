@@ -18,7 +18,7 @@ const Layout = ({ location, title, children }) => {
             <StaticImage alt="" src="../images/logo-white.png" />
           </Col>
           <Col xs={12} className="text-center mt-4">
-            <h1><b>William Sebastiani</b></h1>
+            <h1 className="logoname"><b>WILLIAM SEBASTIANI</b></h1>
           </Col>
         </Row>
       </Link>
