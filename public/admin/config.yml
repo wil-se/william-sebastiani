@@ -21,6 +21,7 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string'}
+      - { label: 'Type', name: 'type', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   
   - name: 'projects'
@@ -38,4 +39,5 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string'}
+      - { label: 'Type', name: 'type', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
