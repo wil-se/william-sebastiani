@@ -32,21 +32,24 @@ function Word({ children, ...props }) {
 function generateWord() {
   const wordList = [
     'React',
-    'JavaScript',
-    'Figma',
-    'SQL',
-    'Laravel',
-    'Grav CMS',
+    'TypeScript',
+    'Web3',
     'Git',
-    'WordPress',
-    'HTML',
-    'CSS',
-    'PHP',
     'Django',
-    'Python',
-    'SCSS',
     'Linux',
-    'Adobe XD'
+    'Netlify',
+    'Node',
+    'Jamstack',
+    'Microservices',
+    'Docker',
+    'AWS',
+    'Ethereum',
+    'Solana',
+    'Rust',
+    'Bash',
+    'NFT',
+    'Solidity',
+    'Anchor'
   ]
   return wordList[randInt(wordList.length)]
 }
@@ -61,6 +64,7 @@ function Cloud({ count = 4, radius = 10 }) {
     const spherical = new THREE.Spherical()
     const phiSpan = Math.PI / (count + 1)
     const thetaSpan = (Math.PI * 2) / count
+    let generated = [];
     for (let i = 1; i < count + 1; i++)
       // Taken from https://discourse.threejs.org/t/can-i-place-obects-on-a-sphere-surface-evenly/4773/6
       for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), generateWord()])
@@ -76,15 +80,17 @@ const Home = ({
   return (
     <Layout location={"/"} title={"Home"}>
       <Row>
-        <Col xs={12} className="text-center mb-2">
-          <h1><b>Hello</b></h1>
+        <Col xs={12} className="text-center mb-5">
+          <h1><b>Hello,</b></h1>
         </Col>
-        <Col xs={12} className="text-center" style={{height: 700}}>
+        <Col xs={12} className="text-center" style={{ height: window.innerWidth > 600 ? 700 : 250 }}>
           <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
             <fog attach="fog" args={['#202025', 0, 80]} />
-            <Cloud count={8} radius={20} />
-            <TrackballControls noZoom={true}/>
+            <Cloud count={12} radius={24} />
+            <TrackballControls noZoom={true} />
           </Canvas>
+        </Col>
+        <Col xs={12} style={{ height: 300 }} className="text-center">
         </Col>
       </Row>
     </Layout>
