@@ -61,7 +61,7 @@ export const pageQuery = graphql`
   }
   allMarkdownRemark(
     sort: {fields: [frontmatter___date], order: DESC}
-    filter: {frontmatter: {type: {eq: "project"}}}
+    filter: {frontmatter: {type: {eq: "projects"}}}
   ) {
     nodes {
       excerpt
