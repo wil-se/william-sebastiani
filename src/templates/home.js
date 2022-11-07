@@ -29,28 +29,28 @@ function Word({ children, ...props }) {
   })
   return <Text ref={ref} onPointerOver={over} onPointerOut={out} {...props} {...fontProps} children={children} />
 }
+const wordList = [
+  'React',
+  'TypeScript',
+  'Web3',
+  'Git',
+  'Django',
+  'Linux',
+  'Netlify',
+  'Node',
+  'Jamstack',
+  'Microservices',
+  'Docker',
+  'AWS',
+  'Ethereum',
+  'Solana',
+  'Rust',
+  'Bash',
+  'NFT',
+  'Solidity',
+  'Anchor'
+]
 function generateWord() {
-  const wordList = [
-    'React',
-    'TypeScript',
-    'Web3',
-    'Git',
-    'Django',
-    'Linux',
-    'Netlify',
-    'Node',
-    'Jamstack',
-    'Microservices',
-    'Docker',
-    'AWS',
-    'Ethereum',
-    'Solana',
-    'Rust',
-    'Bash',
-    'NFT',
-    'Solidity',
-    'Anchor'
-  ]
   return wordList[randInt(wordList.length)]
 }
 function randInt(lessThan) {
@@ -64,7 +64,6 @@ function Cloud({ count = 4, radius = 10 }) {
     const spherical = new THREE.Spherical()
     const phiSpan = Math.PI / (count + 1)
     const thetaSpan = (Math.PI * 2) / count
-    let generated = [];
     for (let i = 1; i < count + 1; i++)
       // Taken from https://discourse.threejs.org/t/can-i-place-obects-on-a-sphere-surface-evenly/4773/6
       for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), generateWord()])
