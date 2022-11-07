@@ -82,7 +82,7 @@ const Home = ({
         <Col xs={12} className="text-center mb-5">
           <h1><b>Hello,</b></h1>
         </Col>
-        <Col xs={12} className="text-center" style={{ height: window.innerWidth > 600 ? 700 : 250 }}>
+        <Col xs={12} className="text-center" style={{ height: window !== 'undefined' && window.innerWidth > 600 ? 700 : 250 }}>
           <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
             <fog attach="fog" args={['#202025', 0, 80]} />
             <Cloud count={12} radius={24} />
