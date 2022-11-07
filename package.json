@@ -1,46 +1,55 @@
 {
-  "name": "blog-markdown",
-  "version": "0.1.0",
+  "name": "gatsby-starter-blog",
   "private": true,
+  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.3",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.1.3",
-    "markdown-to-jsx": "^7.1.6",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.3.1",
-    "react-copy-to-clipboard": "^5.0.4",
-    "react-cursor": "^2.0.15",
-    "react-cursor-custom": "^1.2.4",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0",
-    "react-syntax-highlighter": "^15.4.5",
-    "web-vitals": "^2.1.4"
+    "bootstrap": "^5.2.2",
+    "gatsby": "^4.24.7",
+    "gatsby-plugin-feed": "^4.24.0",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-netlify-cms": "^6.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
+    "gatsby-remark-copy-linked-files": "^5.24.0",
+    "gatsby-remark-images": "^6.24.0",
+    "gatsby-remark-prismjs": "^6.24.0",
+    "gatsby-remark-responsive-iframe": "^5.24.0",
+    "gatsby-remark-smartypants": "^5.24.0",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-transformer-remark": "^5.24.0",
+    "gatsby-transformer-sharp": "^4.24.0",
+    "netlify-cms-app": "^2.15.72",
+    "prismjs": "^1.29.0",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "^18.1.0",
+    "typeface-merriweather": "0.0.72",
+    "typeface-montserrat": "0.0.75"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
