@@ -53,7 +53,7 @@ export default Projects
 export const Head = () => <Seo title="Projects" />
 
 export const pageQuery = graphql`
-  {
+{
   site {
     siteMetadata {
       title
@@ -61,7 +61,7 @@ export const pageQuery = graphql`
   }
   allMarkdownRemark(
     sort: {fields: [frontmatter___date], order: DESC}
-    filter: {frontmatter: {type: {eq: "projects"}}}
+    filter: {frontmatter: {type: {eq: "project"}}}
   ) {
     nodes {
       excerpt
@@ -78,5 +78,4 @@ export const pageQuery = graphql`
     }
   }
 }
-
 `
