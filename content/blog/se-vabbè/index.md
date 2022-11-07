@@ -2,6 +2,7 @@
 title: Se vabbè
 date: 2022-11-07T02:04:54.807Z
 description: Non ho parole
+category: crypto
 ---
 **I LITERALLY HAVE NO WORDS**
 
