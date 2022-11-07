@@ -9,7 +9,7 @@ console.log(excerpt)
 console.log(date)   
 console.log(title) 
     return (
-        <Card className="mb-4">
+        <Card className="mx-3 mb-5">
             <Card.Header className="text-center">
               <h2 className="title"><b>{title}</b></h2>
             </Card.Header>

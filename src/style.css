@@ -240,6 +240,13 @@ a:focus {
   text-decoration: underline !important;
 }
 
+.nav-link > a {
+  font-weight: 500 !important;
+}
+
+.nav-link > a:hover {
+  font-weight: 700 !important;
+}
 /* Custom classes */
 
 .global-wrapper {
@@ -349,7 +356,10 @@ a:focus {
 }
 
 .card {
-  background-color: transparent !important;
+  background-color: #000 !important;
+  height: 200px !important;
+  border-bottom-left-radius: 24px !important;
+  border-bottom-right-radius: 24px !important;
 }
 
 
@@ -358,6 +368,7 @@ a:focus {
   border-color: #FFF !important;
   border-bottom-style: hidden !important;
   color: #FFF !important;
+  border-top-style: none !important;
 }
 
 .card-header {
@@ -373,12 +384,50 @@ a:focus {
   border-top-style: hidden !important;
   border-bottom-style: solid !important;
   color: #FFF !important;
-  border-bottom-left-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 24px !important;
+  border-bottom-right-radius: 24px !important;
 }
 
 .title {
-  color: #000;
+  color: #F37748;
   background-color: #FFF;
   margin-bottom: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+
+
+.card:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #29E7CD 0%, #FFFBFC 100% );
+  transform: translate3d(0px, 20px, 0) scale(0.90);
+  filter: blur(15px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
