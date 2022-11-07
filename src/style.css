@@ -398,7 +398,7 @@ a:focus {
 
 
 
-.card:before {
+.magic-box:before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -419,7 +419,7 @@ a:focus {
 * stacking context. (For example, using the transform
 * property )
 */
-.card::after {
+.magic-box::after {
   content: "";
   z-index: -1;
   position: absolute;

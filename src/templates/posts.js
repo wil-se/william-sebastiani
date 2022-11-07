@@ -58,7 +58,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {type: {eq: "article"}}}
+    ) {
       nodes {
         excerpt
         fields {
@@ -69,8 +72,9 @@ export const pageQuery = graphql`
           title
           description
           category
+          type
         }
       }
     }
-  }
+  }  
 `
