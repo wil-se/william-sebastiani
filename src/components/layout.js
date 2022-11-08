@@ -13,7 +13,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <Container style={{ maxWidth: '100%' }} className="px-0">
       <Link to="/" alt="logo">
-        <Row className="d-flex justify-content-center my-4 mx-0">
+        <Row className="header d-flex justify-content-center pt-5 pb-4 mx-0">
           <Col xs={6} md={2}>
             <StaticImage alt="" src="../images/logo-white.png" />
           </Col>
@@ -30,7 +30,7 @@ const Layout = ({ location, title, children }) => {
           </Col>
         </Row>
       </Container>
-      <footer className="text-center">
+      <footer className="text-center mt-5">
         © {new Date().getFullYear()}, William Sebastiani
       </footer>
     </Container>

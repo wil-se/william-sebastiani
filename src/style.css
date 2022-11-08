@@ -430,3 +430,6 @@ a:focus {
   border-radius: inherit;
 }
       
+.header {
+  background-color: #000;
+}
