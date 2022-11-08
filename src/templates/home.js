@@ -69,7 +69,7 @@ function Cloud({ count = 4, radius = 10 }) {
       for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), generateWord()])
     return temp
   }, [count, radius])
-  return words.map(([pos, word], index) => <Word onClick={() => console.log('omg')} key={index} position={pos} children={word} />)
+  return words.map(([pos, word], index) => <Word key={index} position={pos} children={word} />)
 }
 
 
@@ -84,7 +84,6 @@ const Home = ({
         </Col>
         <Col xs={12} className="text-center" style={{ height: typeof window !== 'undefined' && window.innerWidth > 600 ? 700 : 250 }}>
           <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 90 }}>
-            <fog attach="fog" args={['#202025', 0, 80]} />
             <Cloud count={12} radius={24} />
             <TrackballControls noZoom={true} />
           </Canvas>
