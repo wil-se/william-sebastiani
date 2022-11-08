@@ -25,12 +25,12 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       {/* <Bio /> */}
-      <Row>
+      <Row className="d-flex justify-content-center">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
           console.log(post.frontmatter);
           return (
-            <Col xs={12}>
+            <Col xs={12} lg={8}>
               <Link to={`/posts${post.fields.slug}`} itemProp="url">
                 <PostCard date={post.frontmatter.date} title={title} category={post.frontmatter.category} excerpt={post.frontmatter.description || post.excerpt} />
               </Link>
