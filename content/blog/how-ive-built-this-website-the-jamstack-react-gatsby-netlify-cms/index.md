@@ -1,8 +1,8 @@
 ---
-title: "How I've built this website, the Jamstack: React + Gatsby + Netlify CMS"
+title: How I've built this website
 date: 2022-11-07T23:14:57.430Z
-description: Build a blazing fast website leveraging the latest technologies
-  with zero budget.
+description: Build a blazing fast blog website leveraging the latest
+  technologies (React + Gatsby + Netlify CMS) with zero budget.
 category: dev
 type: article
 ---
