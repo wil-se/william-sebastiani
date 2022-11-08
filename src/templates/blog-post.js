@@ -23,9 +23,9 @@ const BlogPostTemplate = ({
         <header>
           <Row>
             <Col xs={12} className="text-center">
-              <h1 itemProp="headline"><b>{post.frontmatter.title}</b></h1>
+              <h3 itemProp="headline" className="title"><b>{post.frontmatter.title}</b></h3>
             </Col>
-            <Col xs={12} className="text-center">
+            <Col xs={12} className="text-center mt-2">
               <p><i>{post.frontmatter.date}</i></p>
             </Col>
           </Row>
