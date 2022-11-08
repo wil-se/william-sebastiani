@@ -357,7 +357,6 @@ a:focus {
 
 .card {
   background-color: #000 !important;
-  height: 200px !important;
   border-bottom-left-radius: 24px !important;
   border-bottom-right-radius: 24px !important;
 }
@@ -389,7 +388,7 @@ a:focus {
 }
 
 .title {
-  color: #F37748;
+  color: #1A659E;
   background-color: #FFF;
   margin-bottom: 0px;
   padding-top: 5px;

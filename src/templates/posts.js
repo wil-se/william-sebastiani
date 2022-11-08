@@ -30,7 +30,7 @@ const BlogIndex = ({ data, location }) => {
           const title = post.frontmatter.title || post.fields.slug
           console.log(post.frontmatter);
           return (
-            <Col xs={12} md={6}>
+            <Col xs={12}>
               <Link to={`/posts${post.fields.slug}`} itemProp="url">
                 <PostCard date={post.frontmatter.date} title={title} category={post.frontmatter.category} excerpt={post.frontmatter.description || post.excerpt} />
               </Link>
