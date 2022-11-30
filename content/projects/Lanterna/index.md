@@ -1,9 +1,11 @@
 ---
-title: Trading System
-date: 2015-05-01T22:12:03.284Z
-description: text text text text text text text text text
-category: linux
+title: Automated trading strategies using Interactive Brokers TWS API, Django
+  REST, React and Telegram
+date: 2022-11-30T08:52:27.029Z
+description: Create your own tools to automate trading strategies. The software
+  provides a WebApp and a Telegram bot to monitor and control your strategies
+category: trading,bot
 slug: post0
 type: project
 ---
-# \# Trading System
+# \# Automated trading strategies using Interactive Brokers TWS API, Django REST, React and Telegram
