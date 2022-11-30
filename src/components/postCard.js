@@ -16,7 +16,7 @@ console.log(title)
             <Card.Body>
               <Row>
                 <Col xs={12}>
-                    <h4>{category}</h4>
+                    <h4>{category.split(',').map(c => `[${c}] `)}</h4>
                 </Col>
                 <Col xs={12}>
                     {excerpt}
