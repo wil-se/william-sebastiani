@@ -19,6 +19,15 @@ I﻿ have developed a fully custom trading bot, making use of the following tech
 * R﻿eact
 * T﻿elegram
 
+  M﻿ixing all those technologies has several benefits:
+* A﻿utomate trading
+* C﻿reate a custom trading terminal
+* Aggregate data from multiple sources in addition to Interactive Brokers
+* C﻿reate custom indicators
+* C﻿ustom alerts and modifications
+* M﻿onitor and tune strategies on your phone easily with a Telegram Bot
+* I﻿ntegrate other concepts like Artificial Intelligence
+
 ## Project Structure
 
 ![Project structure](schema.png "Project structure")
