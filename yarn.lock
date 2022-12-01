@@ -6195,6 +6195,15 @@
     "probe-image-size" "^7.2.3"
     "unist-util-visit" "^2.0.3"
 
+"gatsby-remark-embed-video@^3.2.1":
+  "integrity" "sha512-VVrcoNcLtWH4Ffqs2Qc2me9Ph+p8iXi9kMbX1OLFLY3JMtk5+lIOUGs0CutWsWKndj2W6PpfkwdFZyuknL5kjQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-embed-video/-/gatsby-remark-embed-video-3.2.1.tgz"
+  "version" "3.2.1"
+  dependencies:
+    "get-video-id" "^3.6.4"
+    "remark-burger" "^1.0.1"
+    "unist-util-visit" "^2.0.3"
+
 "gatsby-remark-images@^6.24.0":
   "integrity" "sha512-NnKoPn9jo7ZQ3PqyCChmRlyfAahhNVDcO/I1+oyMocIKL1+GmTR00WkGLCzuw5rFIdCU9YkqJ8ouhAgb9DPWew=="
   "resolved" "https://registry.npmjs.org/gatsby-remark-images/-/gatsby-remark-images-6.24.0.tgz"
@@ -6588,6 +6597,11 @@
   dependencies:
     "call-bind" "^1.0.2"
     "get-intrinsic" "^1.1.1"
+
+"get-video-id@^3.6.4":
+  "integrity" "sha512-9RPHSQANIeGW5rU3CjWdm1zi+wUHbBWX+m4m+dqQAavrZ9p1P1J7AbxGvVEEHRyGfGrmMf5PqiRWYMyfqM+QYA=="
+  "resolved" "https://registry.npmjs.org/get-video-id/-/get-video-id-3.6.5.tgz"
+  "version" "3.6.5"
 
 "get-window@^1.1.1":
   "integrity" "sha512-yjWpFcy9fjhLQHW1dPtg9ga4pmizLY8y4ZSHdGrAQ1NU277MRhnGnnLPxe19X8W5lWVsCZz++5xEuNozWMVmTw=="
@@ -11081,6 +11095,11 @@
     "@babel/runtime" "^7.0.0"
     "fbjs" "^3.0.0"
     "invariant" "^2.2.4"
+
+"remark-burger@^1.0.1":
+  "integrity" "sha512-F91SyEzat4hBkWsWElHIvMcCQuWoSeZXTuR4DmLvhUIjYkzzVLaX6GRxhkiDrZb/9asvTrYzwEr9HvxN1tqs9Q=="
+  "resolved" "https://registry.npmjs.org/remark-burger/-/remark-burger-1.0.1.tgz"
+  "version" "1.0.1"
 
 "remark-footnotes@^3.0.0":
   "integrity" "sha512-ZssAvH9FjGYlJ/PBVKdSmfyPc3Cz4rTWgZLI4iE/SX8Nt5l3o3oEjv3wwG5VD7xOjktzdwp5coac+kJV9l4jgg=="
