@@ -19,7 +19,8 @@ I﻿ have developed a fully custom trading bot, making use of the following tech
 * R﻿eact
 * T﻿elegram
 
-  M﻿ixing all those technologies has several benefits:
+M﻿ixing all those technologies has several benefits:
+
 * A﻿utomate trading
 * C﻿reate a custom trading terminal
 * Aggregate data from multiple sources in addition to Interactive Brokers
