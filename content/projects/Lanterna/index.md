@@ -20,7 +20,7 @@ I﻿ have developed a fully custom trading bot, making use of the following tech
 * R﻿eact
 * T﻿elegram
 
-#﻿# Project Structure
+## Project Structure
 
 ![Project structure](schema.png "Project structure")
 
