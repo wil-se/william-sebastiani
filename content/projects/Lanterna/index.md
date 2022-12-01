@@ -20,8 +20,10 @@ I﻿ have developed a fully custom trading bot, making use of the following tech
 * R﻿eact
 * T﻿elegram
 
-  ![Project structure](schema.png "Project structure")
+#﻿# Project Structure
 
-  H﻿ere's a video which shows the application running.
+![Project structure](schema.png "Project structure")
 
-  `youtube: https://youtu.be/hR5kvTo0jtU`
+H﻿ere's a video which shows the application running.
+
+`youtube: https://youtu.be/hR5kvTo0jtU`
